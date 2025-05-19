@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Layouts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-end items-center">
+      <a href="blog.html" class="text-2xl font-bold text-indigo-600">Home</a>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section class="container mx-auto px-4 py-16 max-w-3xl">
+      <article class="bg-white rounded-xl shadow p-6 sm:p-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-indigo-600 mb-4">Responsive Layouts</h1>
+        <p class="text-gray-700 text-lg mb-6">
+          Learn the breakpoints, grids, and stacks that adapt to any device.
+        </p>
+
+        <section class="mb-6">
+          <h2 class="text-2xl font-semibold mb-2">Understanding Breakpoints</h2>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            Breakpoints are specific screen widths where your layout adjusts to provide the best user experience. Tailwind makes it easy to apply styles conditionally based on device width using simple prefixes like <code class="bg-gray-100 px-1 rounded text-sm">sm:</code>, <code class="bg-gray-100 px-1 rounded text-sm">md:</code>, and <code class="bg-gray-100 px-1 rounded text-sm">lg:</code>.
+          </p>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-2xl font-semibold mb-2">Flexible Grids with Tailwind</h2>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            The grid system in Tailwind allows you to create flexible, responsive layouts without writing custom CSS. You can define columns, gaps, and flow that automatically adjust on different screen sizes.
+          </p>
+          <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4">
+&lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+  &lt;div&gt;Item 3&lt;/div&gt;
+  &lt;div&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-2">Stacks and Flexbox</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Stacking elements vertically or horizontally is simple with Tailwind’s flexbox utilities. You can control direction, alignment, and spacing with classes like <code class="bg-gray-100 px-1 rounded text-sm">flex-col</code>, <code class="bg-gray-100 px-1 rounded text-sm">justify-center</code>, and <code class="bg-gray-100 px-1 rounded text-sm">space-x-4</code>.
+          </p>
+        </section>
+
+        <footer class="mt-10 border-t pt-6 text-sm text-gray-500">
+          Article by <span class="text-indigo-600 font-medium">Sri's Blog Site</span> · Published May 2025
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+    <div class="container mx-auto px-4 text-center space-y-4">
+      <p>&copy; 2025 Sri's Blog Site. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
